@@ -1,0 +1,18 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/Kira/CLionProjects/untitled3/lab7.c
+stdio.h
+-
+locale.h
+-
+malloc.h
+-
+stdbool.h
+-
+
