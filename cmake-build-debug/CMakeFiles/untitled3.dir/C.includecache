@@ -6,14 +6,10 @@
 
 #IncludeRegexTransform: 
 
-C:/Users/Kira/CLionProjects/untitled3/lab7.c
+C:/Users/prost/Documents/GitHub/ProgrammingLabs1/lab8.c
 stdio.h
 -
-locale.h
--
-malloc.h
--
-stdbool.h
+math.h
 -
 windows.h
 -

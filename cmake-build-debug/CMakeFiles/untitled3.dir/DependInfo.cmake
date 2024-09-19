@@ -4,13 +4,14 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
-  "C:/Users/Kira/CLionProjects/untitled3/lab1.c" "C:/Users/Kira/CLionProjects/untitled3/cmake-build-debug/CMakeFiles/untitled3.dir/lab1.c.obj"
-  "C:/Users/Kira/CLionProjects/untitled3/lab2.c" "C:/Users/Kira/CLionProjects/untitled3/cmake-build-debug/CMakeFiles/untitled3.dir/lab2.c.obj"
-  "C:/Users/Kira/CLionProjects/untitled3/lab3.c" "C:/Users/Kira/CLionProjects/untitled3/cmake-build-debug/CMakeFiles/untitled3.dir/lab3.c.obj"
-  "C:/Users/Kira/CLionProjects/untitled3/lab4.c" "C:/Users/Kira/CLionProjects/untitled3/cmake-build-debug/CMakeFiles/untitled3.dir/lab4.c.obj"
-  "C:/Users/Kira/CLionProjects/untitled3/lab5.c" "C:/Users/Kira/CLionProjects/untitled3/cmake-build-debug/CMakeFiles/untitled3.dir/lab5.c.obj"
-  "C:/Users/Kira/CLionProjects/untitled3/lab6.c" "C:/Users/Kira/CLionProjects/untitled3/cmake-build-debug/CMakeFiles/untitled3.dir/lab6.c.obj"
-  "C:/Users/Kira/CLionProjects/untitled3/lab7.c" "C:/Users/Kira/CLionProjects/untitled3/cmake-build-debug/CMakeFiles/untitled3.dir/lab7.c.obj"
+  "C:/Users/prost/Documents/GitHub/ProgrammingLabs1/lab1.c" "C:/Users/prost/Documents/GitHub/ProgrammingLabs1/cmake-build-debug/CMakeFiles/untitled3.dir/lab1.c.obj"
+  "C:/Users/prost/Documents/GitHub/ProgrammingLabs1/lab2.c" "C:/Users/prost/Documents/GitHub/ProgrammingLabs1/cmake-build-debug/CMakeFiles/untitled3.dir/lab2.c.obj"
+  "C:/Users/prost/Documents/GitHub/ProgrammingLabs1/lab3.c" "C:/Users/prost/Documents/GitHub/ProgrammingLabs1/cmake-build-debug/CMakeFiles/untitled3.dir/lab3.c.obj"
+  "C:/Users/prost/Documents/GitHub/ProgrammingLabs1/lab4.c" "C:/Users/prost/Documents/GitHub/ProgrammingLabs1/cmake-build-debug/CMakeFiles/untitled3.dir/lab4.c.obj"
+  "C:/Users/prost/Documents/GitHub/ProgrammingLabs1/lab5.c" "C:/Users/prost/Documents/GitHub/ProgrammingLabs1/cmake-build-debug/CMakeFiles/untitled3.dir/lab5.c.obj"
+  "C:/Users/prost/Documents/GitHub/ProgrammingLabs1/lab6.c" "C:/Users/prost/Documents/GitHub/ProgrammingLabs1/cmake-build-debug/CMakeFiles/untitled3.dir/lab6.c.obj"
+  "C:/Users/prost/Documents/GitHub/ProgrammingLabs1/lab7.c" "C:/Users/prost/Documents/GitHub/ProgrammingLabs1/cmake-build-debug/CMakeFiles/untitled3.dir/lab7.c.obj"
+  "C:/Users/prost/Documents/GitHub/ProgrammingLabs1/lab8.c" "C:/Users/prost/Documents/GitHub/ProgrammingLabs1/cmake-build-debug/CMakeFiles/untitled3.dir/lab8.c.obj"
   )
 set(CMAKE_C_COMPILER_ID "GNU")
 

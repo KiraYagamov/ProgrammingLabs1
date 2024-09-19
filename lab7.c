@@ -385,7 +385,7 @@ void lab7task13() {
     }
 }
 
-int main() {
+int main7() {
     SetConsoleOutputCP(CP_UTF8);
     //lab7task1();
     //lab7task2();
