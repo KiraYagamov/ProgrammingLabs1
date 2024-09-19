@@ -2,6 +2,7 @@
 #include <locale.h>
 #include <malloc.h>
 #include <stdbool.h>
+#include <windows.h>
 
 void lab7task1() {
     int length;
@@ -74,7 +75,7 @@ void lab7task4() {
     middle /= length - 2;
     printf("Middle: %lf", middle);
 }
-int min(int val1, int val2) {
+int myMin(int val1, int val2) {
     if (val1 < val2) return val1;
     return val2;
 }
@@ -103,7 +104,7 @@ void lab7task5() {
         printf("arr2[%d] = ", i);
         scanf_s("%d", &arr2[i]);
     }
-    int* duplicateArr = (int*)malloc(min(length1, length2) * sizeof(int));
+    int* duplicateArr = (int*)malloc(myMin(length1, length2) * sizeof(int));
     int setIndex = 0;
     for (int i = 0; i < length1; i++) {
         for (int j = 0; j < length2; j++) {
@@ -385,7 +386,7 @@ void lab7task13() {
 }
 
 int main() {
-    setlocale(LC_ALL, "");
+    SetConsoleOutputCP(CP_UTF8);
     //lab7task1();
     //lab7task2();
     //lab7task3();
@@ -398,5 +399,6 @@ int main() {
     //lab7task10();
     //lab7task11();
     //lab7task12();
-    lab7task13();
+//    lab7task13();
+    printf("Привет, мир!");
 }
