@@ -263,7 +263,7 @@ void lab8task10(){
     printf("\n");
 }
 
-int main(){
+int main8(){
     SetConsoleOutputCP(CP_UTF8);
 //    lab8task1();
 //    lab8task2();

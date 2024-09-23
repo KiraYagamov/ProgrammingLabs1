@@ -17,3 +17,5 @@ CMakeFiles/untitled3.dir/lab7.c.obj: ../lab7.c
 
 CMakeFiles/untitled3.dir/lab8.c.obj: ../lab8.c
 
+CMakeFiles/untitled3.dir/lab9.c.obj: ../lab9.c
+

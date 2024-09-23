@@ -358,6 +358,33 @@ lab8.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\untitled3.dir\build.make CMakeFiles/untitled3.dir/lab8.c.s
 .PHONY : lab8.c.s
 
+lab9.obj: lab9.c.obj
+
+.PHONY : lab9.obj
+
+# target to build an object file
+lab9.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\untitled3.dir\build.make CMakeFiles/untitled3.dir/lab9.c.obj
+.PHONY : lab9.c.obj
+
+lab9.i: lab9.c.i
+
+.PHONY : lab9.i
+
+# target to preprocess a source file
+lab9.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\untitled3.dir\build.make CMakeFiles/untitled3.dir/lab9.c.i
+.PHONY : lab9.c.i
+
+lab9.s: lab9.c.s
+
+.PHONY : lab9.s
+
+# target to generate assembly for a file
+lab9.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\untitled3.dir\build.make CMakeFiles/untitled3.dir/lab9.c.s
+.PHONY : lab9.c.s
+
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
@@ -391,6 +418,9 @@ help:
 	@echo ... lab8.obj
 	@echo ... lab8.i
 	@echo ... lab8.s
+	@echo ... lab9.obj
+	@echo ... lab9.i
+	@echo ... lab9.s
 .PHONY : help
 
 

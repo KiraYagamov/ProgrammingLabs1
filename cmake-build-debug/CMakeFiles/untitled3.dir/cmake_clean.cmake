@@ -7,6 +7,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/untitled3.dir/lab6.c.obj"
   "CMakeFiles/untitled3.dir/lab7.c.obj"
   "CMakeFiles/untitled3.dir/lab8.c.obj"
+  "CMakeFiles/untitled3.dir/lab9.c.obj"
   "libuntitled3.dll.a"
   "untitled3.exe"
   "untitled3.exe.manifest"

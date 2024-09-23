@@ -12,6 +12,7 @@ set(CMAKE_DEPENDS_CHECK_C
   "C:/Users/prost/Documents/GitHub/ProgrammingLabs1/lab6.c" "C:/Users/prost/Documents/GitHub/ProgrammingLabs1/cmake-build-debug/CMakeFiles/untitled3.dir/lab6.c.obj"
   "C:/Users/prost/Documents/GitHub/ProgrammingLabs1/lab7.c" "C:/Users/prost/Documents/GitHub/ProgrammingLabs1/cmake-build-debug/CMakeFiles/untitled3.dir/lab7.c.obj"
   "C:/Users/prost/Documents/GitHub/ProgrammingLabs1/lab8.c" "C:/Users/prost/Documents/GitHub/ProgrammingLabs1/cmake-build-debug/CMakeFiles/untitled3.dir/lab8.c.obj"
+  "C:/Users/prost/Documents/GitHub/ProgrammingLabs1/lab9.c" "C:/Users/prost/Documents/GitHub/ProgrammingLabs1/cmake-build-debug/CMakeFiles/untitled3.dir/lab9.c.obj"
   )
 set(CMAKE_C_COMPILER_ID "GNU")
 
