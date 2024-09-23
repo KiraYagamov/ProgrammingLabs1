@@ -1,6 +1,5 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include <math.h>
 
 void lab9task1(){
     int num1 = 5;
@@ -85,7 +84,7 @@ void lab9task8(){
     }
 }
 
-void lab9task9_10(){
+void lab9task9(){
     int matrix[5][6];
     for (int i = 0; i < 5; ++i) {
         for (int j = 0; j < 6; ++j) {
@@ -107,6 +106,18 @@ void lab9task9_10(){
     printf("%d", sum);
 }
 
+void lab9task10(){
+    int** arr = (int**) malloc(5 * 6 * sizeof(int));
+    int sum = 0;
+    for (int i = 0; i < 5; ++i) {
+        arr[i] = (int*) malloc(6 * sizeof(int));
+        for (int j = 0; j < 6; ++j) {
+            arr[i][j] = rand() % 10;
+            sum += arr[i][j];
+        }
+    }
+    printf("%d", sum);
+}
 
 int main(){
 //    lab9task1();
@@ -117,6 +128,7 @@ int main(){
 //    lab9task6();
 //    lab9task7();
 //    lab9task8();
-    lab9task9_10();
+//    lab9task9();
+    lab9task10();
     return 0;
 }
