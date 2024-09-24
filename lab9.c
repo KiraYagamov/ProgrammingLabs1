@@ -49,11 +49,11 @@ void lab9task5(){
 void lab9task6(){
     int arr[] = {1, 2, 3, 4, 5};
     int length = 5;
-    int* first = &arr[0];
-    int* last = &arr[4];
+    int* first;
+    int* last;
     for (int i = 0; i < length/2; i++){
-        first = &arr[i];
-        last = &arr[length-i-1];
+        first = arr + i;
+        last = arr + length - 1 - i;
         int lastVal = *last;
         *last = *first;
         *first = lastVal;
@@ -66,11 +66,12 @@ void lab9task6(){
 void lab9task7(){
     int arr[] = {1, 2, 3, 4, 5};
     int arr2[5];
+    int *pointer = arr, *pointer2 = arr2;
 
     for (int i = 0; i < 5; i++) {
-        int* elem = &arr[i];
-        int* paste = &arr2[i];
-        *paste = *elem;
+        *pointer2 = *pointer;
+        pointer++;
+        pointer2++;
     }
     for (int i = 0; i < 5; i++) {
         printf("%d\n", arr2[i]);
@@ -79,9 +80,10 @@ void lab9task7(){
 
 void lab9task8(){
     int arr[] = {1, 2, 3, 4, 5};
-    int* link = arr;
+    int *pointer = arr, *pointer2 = arr;
     for(int i = 0; i < 5; i++){
-        printf("%d\n", abs(&link[i] - link));
+        pointer2 = pointer + i;
+        printf("%d\n", pointer2 - pointer);
     }
 }
 
@@ -92,19 +94,13 @@ void lab9task9(){
             matrix[i][j] = rand() % 10;
         }
     }
-    int* links = (int*) malloc(5 * 6 * sizeof(int*));
-    for (int i = 0; i < 5; ++i) {
-        for (int j = 0; j < 6; ++j) {
-            links[i * 6 + j] = matrix[i][j];
-        }
-    }
     int sum = 0;
-    for (int i = 0; i < 5; ++i) {
-        for (int j = 0; j < 6; ++j) {
-            sum += links[i * 6 + j];
-        }
+    int *pointer = &matrix[0][0];
+    for (int i = 0; i < 5*6; ++i) {
+        sum += *pointer;
+        pointer++;
     }
-    printf("%d", sum);
+    printf("Sum: %d", sum);
 }
 
 void lab9task10(){
@@ -114,7 +110,17 @@ void lab9task10(){
         arr[i] = (int*) malloc(6 * sizeof(int));
         for (int j = 0; j < 6; ++j) {
             arr[i][j] = rand() % 10;
-            sum += arr[i][j];
+//            printf("%3d", arr[i][j]);
+        }
+//        printf("\n");
+    }
+    int* pointer;
+    int* innerPointer;
+    for (int i = 0; i < 5; ++i) {
+        pointer = arr[i];
+        for (int j = 0; j < 6; ++j) {
+            innerPointer = pointer + j;
+            sum += *innerPointer;
         }
     }
     printf("%d", sum);

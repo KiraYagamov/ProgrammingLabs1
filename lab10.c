@@ -56,6 +56,20 @@ void lab10task5(){
     printf("\n");
 }
 
+void lab10task6(){
+    int num = 722731018;
+    int num1 = 0, num2 = 0, num3 = 0, num4 = 0;
+    for (int i = 29; i > 25; --i)
+        num1 |= (num & (1 << i)) >> 26;
+    for (int i = 25; i > 21; --i)
+        num2 |= (num & (1 << i)) >> 22;
+    for (int i = 21; i > 17; --i)
+        num3 |= (num & (1 << i)) >> 18;
+    for (int i = 3; i >= 0; --i)
+        num4 |= (num & (1 << i)) >> 0;
+    printf("Num1: %d, num2: %d, num3: %d, num4: %d", num1, num2, num3, num4);
+}
+
 void lab10task7(){
     int a = 5, b = 3;
     a ^= b;
@@ -64,13 +78,14 @@ void lab10task7(){
     printf("a: %d, b: %d", a, b);
 }
 
-int main10(){
+int main(){
     SetConsoleOutputCP(CP_UTF8);
 //    lab10task1();
 //    lab10task2();
 //    lab10task3();
 //    lab10task4();
 //    lab10task5();
-    lab10task7();
+    lab10task6();
+//    lab10task7();
     return 0;
 }

@@ -87,26 +87,12 @@ bool isInArr(int val, int* arr, int arrLength) {
     return false;
 }
 void lab7task5() {
-    int length1;
-    printf("Введите длину первого массива: ");
-    scanf_s("%d", &length1);
-    int* arr1 = (int*)malloc(length1 * sizeof(int));
-    for (int i = 0; i < length1; i++) {
-        printf("arr1[%d] = ", i);
-        scanf_s("%d", &arr1[i]);
-    }
-    int length2;
-    printf("Введите длину второго массива: ");
-    scanf_s("%d", &length2);
-    int* arr2 = (int*)malloc(length2 * sizeof(int));
-    for (int i = 0; i < length2; i++) {
-        printf("arr2[%d] = ", i);
-        scanf_s("%d", &arr2[i]);
-    }
-    int* duplicateArr = (int*)malloc(myMin(length1, length2) * sizeof(int));
+    int arr1[] = {1, 2, 4, 6, 8, 10};
+    int arr2[] = {1, 2, 4, 7, 9};
+    int duplicateArr[10];
     int setIndex = 0;
-    for (int i = 0; i < length1; i++) {
-        for (int j = 0; j < length2; j++) {
+    for (int i = 0; i < 5; i++) {
+        for (int j = 0; j < 5; j++) {
             if (arr1[i] == arr2[j]) {
                 int val = arr1[i];
                 if (!isInArr(val, duplicateArr, setIndex)) {
@@ -121,21 +107,6 @@ void lab7task5() {
     }
 }
 
-void sortArr(int* arr, int length) {
-    bool isSorted = false;
-    while (!isSorted) {
-        isSorted = true;
-        for (int i = 0; i < length-1; i++) {
-            if (arr[i] > arr[i + 1]) {
-                int val1 = arr[i];
-                int val2 = arr[i + 1];
-                arr[i] = val2;
-                arr[i + 1] = val1;
-                isSorted = false;
-            }
-        }
-    }
-}
 void sortArrReverse(int* arr, int length) {
     bool isSorted = false;
     while (!isSorted) {
@@ -153,34 +124,19 @@ void sortArrReverse(int* arr, int length) {
 }
 
 void lab7task6() {
-    int length1;
-    printf("Введите длину первого массива: ");
-    scanf_s("%d", &length1);
-    int* arr1 = (int*)malloc(length1 * sizeof(int));
-    for (int i = 0; i < length1; i++) {
-        printf("arr1[%d] = ", i);
-        scanf_s("%d", &arr1[i]);
-    }
-    sortArr(arr1, length1);
-    int length2;
-    printf("Введите длину второго массива: ");
-    scanf_s("%d", &length2);
-    int* arr2 = (int*)malloc(length2 * sizeof(int));
-    for (int i = 0; i < length2; i++) {
-        printf("arr2[%d] = ", i);
-        scanf_s("%d", &arr2[i]);
-    }
-    sortArr(arr2, length2);
+    int arr1[] = {1, 2, 5, 7, 8, 9};
+    int arr2[] = {1, 3, 4, 6, 7, 10};
 
-    int* mergeArr = (int*)malloc((length1 + length2) * sizeof(int));
+    int mergeArr[12];
     int firstIndex = 0;
     int secondIndex = 0;
-    for (int i = 0; i < length1 + length2; i++) {
-        if ((arr1[firstIndex] <= arr2[secondIndex] && firstIndex < length1) || secondIndex >= length2) {
+    for (int i = 0; i < 12; i++) {
+        if ((arr1[firstIndex] <= arr2[secondIndex] && firstIndex < 6) || secondIndex
+        >= 6) {
             mergeArr[i] = arr1[firstIndex];
             firstIndex++;
         }
-        else if(secondIndex < length2) {
+        else if(secondIndex < 6) {
             mergeArr[i] = arr2[secondIndex];
             secondIndex++;
         }
@@ -189,40 +145,25 @@ void lab7task6() {
 }
 
 void lab7task7() {
-    int length1;
-    printf("Введите длину первого массива: ");
-    scanf_s("%d", &length1);
-    int* arr1 = (int*)malloc(length1 * sizeof(int));
-    for (int i = 0; i < length1; i++) {
-        printf("arr1[%d] = ", i);
-        scanf_s("%d", &arr1[i]);
-    }
-    sortArr(arr1, length1);
-    int length2;
-    printf("Введите длину второго массива: ");
-    scanf_s("%d", &length2);
-    int* arr2 = (int*)malloc(length2 * sizeof(int));
-    for (int i = 0; i < length2; i++) {
-        printf("arr2[%d] = ", i);
-        scanf_s("%d", &arr2[i]);
-    }
-    sortArrReverse(arr2, length2);
+    int arr1[] = {1, 2, 5, 7, 8, 9};
+    int arr2[] = {1, 3, 4, 6, 7, 10};
 
-    int* mergeArr = (int*)malloc((length1 + length2) * sizeof(int));
+    int mergeArr[12];
     int firstIndex = 0;
     int secondIndex = 0;
-    for (int i = 0; i < length1 + length2; i++) {
-        if (firstIndex < length1) {
+    for (int i = 0; i < 12; i++) {
+        if ((arr1[firstIndex] <= arr2[secondIndex] && firstIndex < 6) || secondIndex
+                >= 6) {
             mergeArr[i] = arr1[firstIndex];
             firstIndex++;
         }
-        else if (secondIndex < length2) {
+        else if(secondIndex < 6) {
             mergeArr[i] = arr2[secondIndex];
             secondIndex++;
         }
     }
-    sortArrReverse(mergeArr, length1 + length2);
-    for (int i = 0; i < length1 + length2; i++) {
+    sortArrReverse(mergeArr, 12);
+    for (int i = 0; i < 12; ++i) {
         printf("%d\n", mergeArr[i]);
     }
 }
@@ -391,9 +332,9 @@ int main7() {
     //lab7task2();
     //lab7task3();
     //lab7task4();
-    //lab7task5();
-    //lab7task6();
-    //lab7task7();
+//    lab7task5();
+//    lab7task6();
+    lab7task7();
     //lab7task8();
     //lab7task9();
     //lab7task10();
