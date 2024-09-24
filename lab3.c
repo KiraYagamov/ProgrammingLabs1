@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include <locale.h>
+#include <windows.h>
 #include <math.h>
 #include <stdbool.h>
 void task1() {
@@ -106,7 +106,7 @@ void task8() {
 }
 
 int main3() {
-    setlocale(LC_ALL, "");
+    SetConsoleOutputCP(CP_UTF8);
     //task1();
     //task2();
     //task3();

@@ -1,5 +1,4 @@
 #include <stdio.h>
-#include <locale.h>
 #include <malloc.h>
 #include <stdbool.h>
 #include <windows.h>
@@ -385,6 +384,7 @@ void lab7task13() {
     }
 }
 
+
 int main7() {
     SetConsoleOutputCP(CP_UTF8);
     //lab7task1();
@@ -400,5 +400,4 @@ int main7() {
     //lab7task11();
     //lab7task12();
 //    lab7task13();
-    printf("Привет, мир!");
 }

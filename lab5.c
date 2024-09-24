@@ -1,15 +1,19 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include <locale.h>
+#include <windows.h>
 #include <math.h>
 
 void lab5task1() {
     int num = 1;
+    printf("-----------------\n");
+    printf("Число Квадрат\n");
     for (int i = 0; i < 10; i++) {
-        printf("%d\n", num * num);
+        printf("%3d %7d\n", num, num * num);
         num += 2;
     }
+    printf("-----------------\n");
 }
+
 void lab5task2() {
     int n;
     printf("N: ");
@@ -70,19 +74,19 @@ void lab5task6() {
 void lab5task7() {
     for (int i = 1; i <= 10; i++) {
         for (int j = 1; j <= 10; j++) {
-            printf("%d ", i * j);
+            printf("%4d ", i * j);
         }
         printf("\n");
     }
 }
 int main5() {
-    setlocale(LC_ALL, "");
+    SetConsoleOutputCP(CP_UTF8);
 
-    //lab5task1();
+//    lab5task1();
     //lab5task2();
     //lab5task3();
-    //lab5task4();
-    //lab5task5();
+//    lab5task4();
+//    lab5task5();
     //lab5task6();
-    lab5task7();
+//    lab5task7();
 }

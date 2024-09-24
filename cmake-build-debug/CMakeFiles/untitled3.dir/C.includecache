@@ -6,11 +6,21 @@
 
 #IncludeRegexTransform: 
 
-C:/Users/prost/Documents/GitHub/ProgrammingLabs1/lab9.c
+C:/Users/prost/Documents/GitHub/ProgrammingLabs1/lab7.c
 stdio.h
 -
-stdlib.h
+malloc.h
+-
+stdbool.h
+-
+windows.h
+-
+
+C:/Users/prost/Documents/GitHub/ProgrammingLabs1/lab8.c
+stdio.h
 -
 math.h
+-
+windows.h
 -
 

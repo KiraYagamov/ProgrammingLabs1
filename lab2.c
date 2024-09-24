@@ -1,7 +1,7 @@
 #include <stdio.h>
-#include <locale.h>
+#include <windows.h>
 int main2() {
-    setlocale(LC_ALL, "");
+    SetConsoleOutputCP(CP_UTF8);
 
     printf("Столбов Егор\n"); //1
 

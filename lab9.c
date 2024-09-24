@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <windows.h>
 
 void lab9task1(){
     int num1 = 5;
@@ -107,7 +108,7 @@ void lab9task9(){
 }
 
 void lab9task10(){
-    int** arr = (int**) malloc(5 * 6 * sizeof(int));
+    int** arr = (int**) malloc(5 * sizeof(int));
     int sum = 0;
     for (int i = 0; i < 5; ++i) {
         arr[i] = (int*) malloc(6 * sizeof(int));
@@ -119,7 +120,8 @@ void lab9task10(){
     printf("%d", sum);
 }
 
-int main(){
+int main9(){
+    SetConsoleOutputCP(CP_UTF8);
 //    lab9task1();
 //    lab9task2();
 //    lab9task3();

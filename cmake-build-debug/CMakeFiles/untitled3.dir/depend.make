@@ -3,6 +3,8 @@
 
 CMakeFiles/untitled3.dir/lab1.c.obj: ../lab1.c
 
+CMakeFiles/untitled3.dir/lab10.c.obj: ../lab10.c
+
 CMakeFiles/untitled3.dir/lab2.c.obj: ../lab2.c
 
 CMakeFiles/untitled3.dir/lab3.c.obj: ../lab3.c

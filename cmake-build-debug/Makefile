@@ -169,6 +169,33 @@ lab1.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\untitled3.dir\build.make CMakeFiles/untitled3.dir/lab1.c.s
 .PHONY : lab1.c.s
 
+lab10.obj: lab10.c.obj
+
+.PHONY : lab10.obj
+
+# target to build an object file
+lab10.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\untitled3.dir\build.make CMakeFiles/untitled3.dir/lab10.c.obj
+.PHONY : lab10.c.obj
+
+lab10.i: lab10.c.i
+
+.PHONY : lab10.i
+
+# target to preprocess a source file
+lab10.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\untitled3.dir\build.make CMakeFiles/untitled3.dir/lab10.c.i
+.PHONY : lab10.c.i
+
+lab10.s: lab10.c.s
+
+.PHONY : lab10.s
+
+# target to generate assembly for a file
+lab10.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\untitled3.dir\build.make CMakeFiles/untitled3.dir/lab10.c.s
+.PHONY : lab10.c.s
+
 lab2.obj: lab2.c.obj
 
 .PHONY : lab2.obj
@@ -397,6 +424,9 @@ help:
 	@echo ... lab1.obj
 	@echo ... lab1.i
 	@echo ... lab1.s
+	@echo ... lab10.obj
+	@echo ... lab10.i
+	@echo ... lab10.s
 	@echo ... lab2.obj
 	@echo ... lab2.i
 	@echo ... lab2.s

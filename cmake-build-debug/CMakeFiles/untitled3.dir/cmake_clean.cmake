@@ -1,5 +1,6 @@
 file(REMOVE_RECURSE
   "CMakeFiles/untitled3.dir/lab1.c.obj"
+  "CMakeFiles/untitled3.dir/lab10.c.obj"
   "CMakeFiles/untitled3.dir/lab2.c.obj"
   "CMakeFiles/untitled3.dir/lab3.c.obj"
   "CMakeFiles/untitled3.dir/lab4.c.obj"

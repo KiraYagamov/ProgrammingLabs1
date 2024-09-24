@@ -1,8 +1,8 @@
 #include <stdio.h>
-#include <locale.h>
+#include <windows.h>
 
 int main1() {
-    setlocale(LC_ALL, "");
+    SetConsoleOutputCP(CP_UTF8);
 
     float x = -1.5f; //1
 

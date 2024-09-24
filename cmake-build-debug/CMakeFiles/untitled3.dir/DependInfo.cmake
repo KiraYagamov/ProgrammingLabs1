@@ -5,6 +5,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
   "C:/Users/prost/Documents/GitHub/ProgrammingLabs1/lab1.c" "C:/Users/prost/Documents/GitHub/ProgrammingLabs1/cmake-build-debug/CMakeFiles/untitled3.dir/lab1.c.obj"
+  "C:/Users/prost/Documents/GitHub/ProgrammingLabs1/lab10.c" "C:/Users/prost/Documents/GitHub/ProgrammingLabs1/cmake-build-debug/CMakeFiles/untitled3.dir/lab10.c.obj"
   "C:/Users/prost/Documents/GitHub/ProgrammingLabs1/lab2.c" "C:/Users/prost/Documents/GitHub/ProgrammingLabs1/cmake-build-debug/CMakeFiles/untitled3.dir/lab2.c.obj"
   "C:/Users/prost/Documents/GitHub/ProgrammingLabs1/lab3.c" "C:/Users/prost/Documents/GitHub/ProgrammingLabs1/cmake-build-debug/CMakeFiles/untitled3.dir/lab3.c.obj"
   "C:/Users/prost/Documents/GitHub/ProgrammingLabs1/lab4.c" "C:/Users/prost/Documents/GitHub/ProgrammingLabs1/cmake-build-debug/CMakeFiles/untitled3.dir/lab4.c.obj"

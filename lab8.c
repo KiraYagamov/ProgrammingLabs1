@@ -268,11 +268,11 @@ int main8(){
 //    lab8task1();
 //    lab8task2();
 //    lab8task3();
-//    lab8task4();
+    lab8task4();
 //    lab8task5();
 //    lab8task6();
 //    lab8task7();
 //    lab8task8();
 //    lab8task9();
-    lab8task10();
+//    lab8task10();
 }

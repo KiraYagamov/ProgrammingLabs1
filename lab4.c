@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include <locale.h>
+#include <windows.h>
 
 
 void lab4task1() {
@@ -51,27 +51,27 @@ void lab4task2() {
     else
         hello_number = 5;
     switch (hello_number) {
-    case 1:
-        printf("Good Night!\n");
-        break;
-    case 2:
-        printf("Good Morning!\n");
-        break;
-    case 3:
-        printf("Good Day!\n");
-        break;
-    case 4:
-        printf("Good Afternoon!\n");
-        break;
-    case 5:
-        printf("Good Evening!\n");
-        break;
-    default:
-        printf("Error!");
+        case 1:
+            printf("Good Night!\n");
+            break;
+        case 2:
+            printf("Good Morning!\n");
+            break;
+        case 3:
+            printf("Good Day!\n");
+            break;
+        case 4:
+            printf("Good Afternoon!\n");
+            break;
+        case 5:
+            printf("Good Evening!\n");
+            break;
+        default:
+            printf("Error!");
     }
 }
 int main4() {
-    setlocale(LC_ALL, "");
+    SetConsoleOutputCP(CP_UTF8);
     lab4task1();
     lab4task2();
 }
